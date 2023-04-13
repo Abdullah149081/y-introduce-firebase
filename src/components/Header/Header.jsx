@@ -1,10 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div>
-      <h1 className="text-center text-4xl">this is header</h1>
-    </div>
+    <nav className="flex gap-4 pb-12 mt-5 justify-center ">
+      <Link className="btn" to="/">
+        Home
+      </Link>
+      <Link className="btn" to="/login">
+        Login
+      </Link>
+    </nav>
   );
 };
 
